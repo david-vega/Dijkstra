@@ -6,4 +6,10 @@ describe Node do
     node.name.should == 'foo'
     node.distance.should == 1.0/0.0
   end
+
+  it 'creates the initial node' do
+    node = Node.new 'foo', 0
+    node.name.should == 'foo'
+    node.distance.should == 0
+  end
 end
