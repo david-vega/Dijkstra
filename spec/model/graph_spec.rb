@@ -20,6 +20,8 @@ describe Graph do
       graph.default_graph
       graph.nodes.count.should == 6
       graph.nodes[1].connections.should == { '1' => '7', '3' => 10, '4' => 15}
+      graph.nodes[0].visited.should == true
+      graph.nodes[0].distance.should == 0
     end
   end
 

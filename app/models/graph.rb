@@ -11,8 +11,8 @@ class Graph
   end
 
   def create_nodes int
+    @nodes << Node.new(1, 0, true)
     (int-1).times { |i| @nodes << Node.new(i+1) }
-    @nodes << Node.new(1)
   end
 
   def generate_connections
