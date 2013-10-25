@@ -5,12 +5,13 @@ describe Node do
     node = Node.new 'foo'
     node.id.should == 'foo'
     node.distance.should == 1.0/0.0
-    node.connections
+    node.connections.should == {}
   end
 
   it 'creates the initial node' do
     node = Node.new 'foo', 0
     node.id.should == 'foo'
     node.distance.should == 0
+    node.connections.should == {}
   end
 end

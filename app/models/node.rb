@@ -4,6 +4,6 @@ class Node
   def initialize(id, distance = 1.0/0.0)
     @id = id
     @distance = distance
-    @connections = []
+    @connections = {}
   end
 end
